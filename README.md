@@ -2,6 +2,7 @@
 Following are examples of the calls supported by the application. For more information a swagger documentation can be accessed at:
 
 `http://localhost:8080/swagger-ui.html`
+
 ##Registration example:
 
 `POST http://localhost:8080/register`
