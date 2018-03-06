@@ -1,9 +1,10 @@
-#Comments App
+# Comments App
+
 Following are examples of the calls supported by the application. For more information a swagger documentation can be accessed at:
 
 `http://localhost:8080/swagger-ui.html`
 
-##Registration example:
+## Registration example:
 
 `POST http://localhost:8080/register`
 ```
@@ -13,7 +14,7 @@ Following are examples of the calls supported by the application. For more infor
 }
 ```
 
-##Login example
+## Login example
 
 `POST http://localhost:8080/login`
 ```
@@ -25,14 +26,15 @@ Following are examples of the calls supported by the application. For more infor
 
 In response of a login call you'll receive a token (JWT), use that in the Authorization header (Authorization: Bearer \<token\>) for any calls to endpoints which are protected. 
 
-##Get all comments
+## Get all comments
 
 `GET http://localhost:8080/comment`
 
-###Filter comments by author
+### Filter comments by author
+
 `GET http://localhost:8080/comment?author=test`
 
-##Create new comment
+## Create new comment
 
 `POST http://localhost:8080/comment`
 
@@ -42,7 +44,7 @@ In response of a login call you'll receive a token (JWT), use that in the Author
 }
 ```
 
-##Update a comment
+## Update a comment
 
 `PUT http://localhost:8080/comment/1`
 
@@ -52,6 +54,6 @@ In response of a login call you'll receive a token (JWT), use that in the Author
 }
 ```
 
-##Delete a comment
+## Delete a comment
 
 `DELETE http://localhost:8080/comment/1`
